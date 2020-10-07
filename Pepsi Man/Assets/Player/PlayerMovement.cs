@@ -24,9 +24,9 @@ public class PlayerMovement : MonoBehaviour
             jumps.jump = false;
         }
 
-
+        // Rör höger och vänster
         float walk = Input.GetAxis("Horizontal");
-        transform.position += new Vector3(walk * Speed * Time.deltaTime, 0f);
+        transform.position += new Vector3(walk * Speed * Time.deltaTime, 0);
 
         if (Input.GetKey(KeyCode.A))
         {
@@ -36,5 +36,6 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 0);
         }
+
     }
 }

@@ -6,17 +6,20 @@ public class Shooting : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bullet;
-    // Update is called once per frame
-    void Update()
+
+    public void Start()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        Invoke("Update", 1f);
+    }
+
+    public void Update()
+    {
+       
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            Shoot();
+            Instantiate(bullet, firePoint.position, firePoint.rotation);
         }
     }
 
-    void Shoot()
-    {
-        Instantiate(bullet, firePoint.position, firePoint.rotation);
-    }
+
 }
