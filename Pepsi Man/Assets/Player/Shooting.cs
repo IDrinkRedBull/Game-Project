@@ -14,7 +14,6 @@ public class Shooting : MonoBehaviour
 
     public void Update()
     {
-       
         if (Input.GetKeyDown(KeyCode.R))
         {
             Instantiate(bullet, firePoint.position, firePoint.rotation);

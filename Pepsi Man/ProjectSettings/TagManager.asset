@@ -8,6 +8,9 @@ TagManager:
   - Pepsi
   - Bullet
   - Monster
+  - PowerGiver
+  - PatrolBarrier
+  - Trap
   layers:
   - Default
   - TransparentFX

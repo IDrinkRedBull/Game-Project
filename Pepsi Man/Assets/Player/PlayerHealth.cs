@@ -6,16 +6,25 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public Rigidbody2D rb;
-    int health = 100;
+    public int health = 100;
+    public Animator animator;
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Monster")
         {
             health -= 50;
-            Debug.Log(health);
+            Debug.Log(health + "Health");
+            animator.SetTrigger("Hit");
+        }
+        else if (collision.gameObject.tag == "Trap")
+        {
+            health -= 100;
+            Debug.Log(health + "Health");
+            animator.SetTrigger("Hit");
         }
         if(health <= 0)
         {
+            Debug.Log("Dead!");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

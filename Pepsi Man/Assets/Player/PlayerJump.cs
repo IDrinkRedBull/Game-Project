@@ -5,14 +5,13 @@ using UnityEngine;
 public class PlayerJump : MonoBehaviour
 {
     public bool jump;
-    public void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag.Contains("Ground"))
         {
             jump = true;
             Debug.Log("touch");
         }
-
     }
 }
  
