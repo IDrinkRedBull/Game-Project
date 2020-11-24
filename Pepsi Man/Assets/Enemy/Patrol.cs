@@ -13,13 +13,11 @@ public class Patrol : MonoBehaviour
         RaycastHit2D groundCheck = Physics2D.Raycast(groundDetection.position, Vector2.down, 3f);
         if (groundCheck.collider.gameObject.tag == "PatrolBarrier" && movingRight == true)
         {
-            Debug.Log("Ray right");
             transform.eulerAngles = new Vector3(0, 180);
             movingRight = false;
         }
         else if (groundCheck.collider.gameObject.tag == "PatrolBarrier" && movingRight == false)
         {
-            Debug.Log("Ray left");
             transform.eulerAngles = new Vector3(0, 0);
             movingRight = true;
         }

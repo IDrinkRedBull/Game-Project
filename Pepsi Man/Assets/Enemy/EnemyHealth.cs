@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    int health = 100;
+    public int health = 100;
     public Animator animator;
-    public void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Bullet")
         {
@@ -14,7 +14,13 @@ public class EnemyHealth : MonoBehaviour
             Debug.Log("Enemy health: " + health + "hp");
             animator.SetTrigger("Hit");
         }
-        if (health == 0)
+        else if (collision.gameObject.tag == "7Bullet")
+        {
+            health -= 7;
+            Debug.Log("Enemy health: " + health + "hp");
+            animator.SetTrigger("Hit");
+        }
+        if (health <= 0)
         {
             Destroy(gameObject);
         }

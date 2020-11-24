@@ -2,20 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletVelocity : MonoBehaviour
+public class ExplodeDelay : MonoBehaviour
 {
-    public float speed = 20f;
-    public Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
-        rb.velocity = transform.right * speed;
+        StartCoroutine(poof(0.5f));
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    IEnumerator poof(float s)
     {
+        yield return new WaitForSeconds(s);
         Destroy(gameObject);
     }
-
-
 }

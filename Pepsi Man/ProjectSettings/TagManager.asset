@@ -11,6 +11,8 @@ TagManager:
   - PowerGiver
   - PatrolBarrier
   - Trap
+  - Mentos
+  - 7Bullet
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Solid
   - 
   - 
   - 

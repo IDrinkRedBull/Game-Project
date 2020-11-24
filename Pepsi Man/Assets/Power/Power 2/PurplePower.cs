@@ -9,6 +9,7 @@ public class PurplePower : MonoBehaviour
     public GameObject icon;
     public Text text;
     bool touch;
+    public Animator animator;
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Pepsi").GetComponent<Inventory>();
@@ -39,15 +40,23 @@ public class PurplePower : MonoBehaviour
     }
     private void pickup()
     {
-        text.gameObject.SetActive(true);
+        text.gameObject.SetActive(false);
         //Tar up saker och spara i inventory
         if (inventory.empty == true)
         {
             inventory.empty = false;
             Instantiate(icon, inventory.slot.transform);
             inventory.pickup[1] = true;
-            Destroy(gameObject);
+            animator.SetBool("pickup", true);
+            Destroy(gameObject, 0.20f);
+            //DestroyIt();
         }
+    }
+
+    IEnumerator DestroyIt()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Destroy(gameObject);
     }
 
 }

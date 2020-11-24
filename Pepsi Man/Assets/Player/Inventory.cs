@@ -23,6 +23,11 @@ public class Inventory : MonoBehaviour
             power.text = "Pepsi Max";
             disableText();
         }
+        if (PowerSlot[1] == true)
+        {
+            power.text = "7up";
+            disableText();
+        }
     }
 
     void DisableText()

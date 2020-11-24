@@ -6,11 +6,13 @@ public class Powers : MonoBehaviour
 {
     Inventory inventory;
     public Shooting shooting;
+    public LongShoot longShoot;
     // Start is called before the first frame update
     void Start()
     {
         inventory = GetComponent<Inventory>();
         shooting.enabled = false;
+        longShoot.enabled = false;
     }
 
     // Update is called once per frame
@@ -27,7 +29,11 @@ public class Powers : MonoBehaviour
 
         if (inventory.PowerSlot[1] == true)
         {
-
+            longShoot.enabled = true;
+        }
+        else
+        {
+            longShoot.enabled = false;
         }
     }
 }
