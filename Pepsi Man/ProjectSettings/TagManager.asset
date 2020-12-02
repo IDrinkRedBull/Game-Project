@@ -13,6 +13,10 @@ TagManager:
   - Trap
   - Mentos
   - 7Bullet
+  - TrapTrigger
+  - Ladder
+  - BossTrigger
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
@@ -23,7 +27,7 @@ TagManager:
   - 
   - 
   - Solid
-  - 
+  - Ladder
   - 
   - 
   - 

@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         //Gubben går tillbaka till nuvarande level när position är -5y
-        if(player.transform.position.y <= -5)
+        if(player.transform.position.y <= -10)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }

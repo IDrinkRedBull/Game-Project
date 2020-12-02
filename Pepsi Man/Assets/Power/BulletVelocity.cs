@@ -14,7 +14,11 @@ public class BulletVelocity : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
+        if (collision.gameObject.tag != "Ladder")
+        {
+            Destroy(gameObject);
+        }
+        
     }
 
 

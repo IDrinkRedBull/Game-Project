@@ -10,7 +10,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            health -= 20;
+            health -= 15;
             Debug.Log("Enemy health: " + health + "hp");
             animator.SetTrigger("Hit");
         }

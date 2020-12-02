@@ -324,6 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coin: {fileID: 37103300}
   score: {fileID: 1973781357}
+  points: 100
 --- !u!95 &37103304
 Animator:
   serializedVersion: 3
@@ -971,7 +972,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 186964835}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 76.9, y: 0, z: 0}
+  m_LocalPosition: {x: 76.9, y: 0, z: -7.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2124429191}
@@ -2477,6 +2478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coin: {fileID: 395090396}
   score: {fileID: 1973781357}
+  points: 100
 --- !u!95 &395090400
 Animator:
   serializedVersion: 3
@@ -3255,7 +3257,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.818042
+  orthographic size: 11
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3279,7 +3281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.34, y: 1.2, z: -10}
+  m_LocalPosition: {x: -6.1, y: 34.8, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 975689380}
@@ -3527,6 +3529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coin: {fileID: 540947096}
   score: {fileID: 1973781357}
+  points: 100
 --- !u!1 &552478533
 GameObject:
   m_ObjectHideFlags: 0
@@ -3958,6 +3961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coin: {fileID: 631864063}
   score: {fileID: 1973781357}
+  points: 100
 --- !u!95 &631864067
 Animator:
   serializedVersion: 3
@@ -4212,6 +4216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coin: {fileID: 712729057}
   score: {fileID: 1973781357}
+  points: 100
 --- !u!95 &712729061
 Animator:
   serializedVersion: 3
@@ -4355,6 +4360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coin: {fileID: 713528432}
   score: {fileID: 1973781357}
+  points: 100
 --- !u!95 &713528436
 Animator:
   serializedVersion: 3
@@ -4830,6 +4836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coin: {fileID: 791804412}
   score: {fileID: 1973781357}
+  points: 100
 --- !u!95 &791804416
 Animator:
   serializedVersion: 3
@@ -5081,6 +5088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coin: {fileID: 794697545}
   score: {fileID: 1973781357}
+  points: 100
 --- !u!95 &794697549
 Animator:
   serializedVersion: 3
@@ -5873,6 +5881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mentos: {fileID: 3912686638570450014, guid: 18776831f62a87545ba524d94fde88c6, type: 3}
   point: {fileID: 933230403}
+  sec: 3
 --- !u!1 &957267154
 GameObject:
   m_ObjectHideFlags: 0
@@ -6187,8 +6196,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975689379}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.110000014, y: -0.110000014, z: 300}
-  m_LocalScale: {x: 9.526538, y: 10.258327, z: 1}
+  m_LocalPosition: {x: 2.1, y: 4.3, z: 300}
+  m_LocalScale: {x: 19.172157, y: 19.155512, z: 1}
   m_Children: []
   m_Father: {fileID: 519420032}
   m_RootOrder: 0
@@ -6754,6 +6763,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coin: {fileID: 1066018362}
   score: {fileID: 1973781357}
+  points: 100
 --- !u!95 &1066018366
 Animator:
   serializedVersion: 3
@@ -7324,6 +7334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coin: {fileID: 1125897406}
   score: {fileID: 1973781357}
+  points: 100
 --- !u!95 &1125897410
 Animator:
   serializedVersion: 3
@@ -8573,7 +8584,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347319571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1704502058}
@@ -59698,6 +59709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coin: {fileID: 1748626170}
   score: {fileID: 1973781357}
+  points: 100
 --- !u!95 &1748626174
 Animator:
   serializedVersion: 3
@@ -59841,6 +59853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coin: {fileID: 1784751915}
   score: {fileID: 1973781357}
+  points: 100
 --- !u!95 &1784751919
 Animator:
   serializedVersion: 3
@@ -61109,6 +61122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Coin: {fileID: 2073129861}
   score: {fileID: 1973781357}
+  points: 100
 --- !u!95 &2073129865
 Animator:
   serializedVersion: 3

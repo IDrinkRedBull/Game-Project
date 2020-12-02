@@ -20,7 +20,7 @@ public class UseItem : MonoBehaviour
 
     private void Update()
     {
-        if (keep == true && Input.GetKeyDown(KeyCode.T))
+        if (keep && Input.GetKeyDown(KeyCode.T))
         {
             Debug.Log("work");
             UseItems();
