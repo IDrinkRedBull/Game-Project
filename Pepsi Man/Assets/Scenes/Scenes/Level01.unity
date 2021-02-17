@@ -3228,6 +3228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3b1835b5c7fbb247ae8fb22740c6613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bossRoom: {fileID: 0}
+  playerMode: 1
   Player: {fileID: 1691874982}
   offset: {x: 0, y: 4.9, z: -10}
 --- !u!20 &519420031
@@ -58856,6 +58858,7 @@ MonoBehaviour:
   Speed: 5
   JumpPower: 1
   jumps: {fileID: 1691874984}
+  animator: {fileID: 1691874991}
 --- !u!61 &1691874986
 BoxCollider2D:
   m_ObjectHideFlags: 0
